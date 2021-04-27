@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Starbucks Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="img/logo.png"></a>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Menú</a></li>
+                <li><a href="#">Nuevo</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="textBox">
+                <br>
+                <h2>No es sólo Café<br>Es <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec diam commodo, pretium lacus
+                    vitae, tincidunt magna. Donec eleifend at risus varius porttitor. Cras non di
+                    ac, mattis ligula. Donec consequat nunc at justo conseq pulvinar. Morbi non enim venenatis.</p>
+                <a href="#">Aprende Más...</a>
+            </div>
+
+
+            <div class="imgBox">
+                <img src="img/img1.png" class="starbucks">
+            </div>
+        </div>
+
+        <ul class="thumb">
+            <li> <img src="img/thumb1.png" onclick="imgSlider('img/img1.png');changeCircleColor('#017143')"> </li>
+            <li> <img src="img/thumb2.png"  onclick="imgSlider('img/img2.png');changeCircleColor('#eb7495')"> </li>
+            <li> <img src="img/thumb3.png"  onclick="imgSlider('img/img3.png');changeCircleColor('#d752b1')"> </li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="img/facebook.png"></a></li>
+            <li><a href="#"><img src="img/instagram.png"></a></li>
+            <li><a href="#"><img src="img/twitter.png"></a></li>
+        </ul>
+    </section>
+    <script type ="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.starbucks').src =anything;
+    }
+
+    function changeCircleColor(color){
+        const circle = document.querySelector('.circle');
+        circle.style.background = color;
+    }
+    </script>
+</body>
+
+<footer id="footer">
+    <p> &copy; Desarrollado por Richard García </p>
+
+   <p> Más contenido en mi   <a href="../index.html">SITIO WEB</a></p>
+
+</footer>
+
+</html>
